@@ -1,0 +1,33 @@
+{
+  "title": "Admin Dashboard",
+  "sections": [
+    {
+      "type": "table",
+      "title": "Users",
+      "endpoint": "/api/users",
+      "columns": ["id", "username", "email", "password"]
+    },
+    {
+      "type": "form",
+      "title": "Add User",
+      "endpoint": "/api/users",
+      "fields": [
+        {
+          "name": "username",
+          "type": "text",
+          "label": "Username"
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "label": "Email"
+        },
+        {
+          "name": "password",
+          "type": "password",
+          "label": "Password"
+        }
+      ]
+    }
+  ]
+}
